@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 // Recipient email address
-$to = "shr.sudarshan@gmail.com";
+$to = "Shr.sudarshan@gmail.com";
 
 // Subject of the email
 $subject = "New message from $name";
