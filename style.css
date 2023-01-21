@@ -1,0 +1,131 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 3em;
+  margin: 0;
+}
+
+/* Navigation styles */
+nav {
+  background-color:#B22222;
+  color: #fff;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  color: white;
+  display: inline-block;
+  padding: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main content styles */
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+section h2 {
+  color: white;
+  font-size: 2em;
+  margin: 0 0 20px;
+}
+
+section p {
+  color: whitesmoke;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Portfolio styles */
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project img {
+  width: 300px;
+  height: 300px;
+  align : center;
+}
+
+/* Contact styles */
+form label {
+  display: block;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f5f5f5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  color:black;
+  margin: 0;
+}
+
+a img {
+  display:inline-block;
+  background: white;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+a:hover img {
+  transform: scale(1.2);
+}
+
+
