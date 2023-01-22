@@ -1,13 +1,37 @@
-/* Set the height and width of the two sections */
-#left-section{
-  height: 100vh;
-  width: 50%;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@500&display=swap');
+
+
+#left-section {
+  width: 50%; /* adjust the width as per your requirement */
+    height: 100%; /* adjust the height as per your requirement */
+    background-color: black; /* adjust the background color as per your requirement */
+    float: left; /* to align the left section to the left side */
+    position: relative; /* to position the content relative to left-section element */
 }
+
+#home {
+    width: 80%; /* adjust the width as per your requirement */
+    height: 80%; /* adjust the height as per your requirement */
+    position: absolute; /* to position the content absolute to left-section element */
+    top: 50%; /* position the content at 50% from the top */
+    left: 50%; /* position the content at 50% from the left */
+    transform: translate(-50%, -50%); /* to center the content both horizontally and vertically */
+}
+
+#home h1 {
+  color: red; /* adjust the text color as per your requirement */
+  font-size: 2rem; /* adjust the font-size as per your requirement */
+  margin-bottom: 1rem;
+  justify-content: center; /* add some margin bottom for spacing */
+}
+
+#home a {
+  color: white; /* adjust the text color as per your requirement */
+  font-size: 1.5rem; /* adjust the font-size as per your requirement */
+  text-align: center; /* to align the text horizontally in the center */
+}
+
+
 #right-section{
   height: 100vh;
   width: 50%;
@@ -22,13 +46,24 @@
   overflow: hidden;
 }
 h1{
-  color: white;
-  font-size: 4rem;
+  color: whitesmoke;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 2.7rem;
   margin-bottom: 1rem;
   text-align:center;
+  margin: 0.5%;
 }
+.learner{
+  color: #bfbfbf;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size:1.75rem;
+  margin: 0;
+  margin-bottom:1rem;
+}
+
 button{
   background-color: #B22222;
+  font-family: 'Sofia Sans', sans-serif;
   color: black;
   padding: 0.5rem 1rem;
   border: none;
@@ -53,6 +88,7 @@ button:hover {
 }
 
 #social-icons a img:hover{
+  color: #ccc;
   transform: scale(1.2);
 }
 
