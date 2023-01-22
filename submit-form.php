@@ -1,30 +1,17 @@
-<!DOCTYPE HTML>  
-<html>
-<head>
-<style>
-.error {color: #FF0000;}
-</style>
-</head>
-<body>  
 <?php
+$servername = "website";
+$username = "root";
+$password = "2002";
+$dbname = "database_name";
 
-if(isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-
-    $to = 'youremail@example.com';
-    $subject = 'New Form Submission';
-    $message = "Name: " . $name . "\n" . "Email: " . $email . "\n" . "Message: " . $message;
-    $headers = "From: " . $email;
-
-    if(mail($to, $subject, $message, $headers)) {
-        echo "<h1>Sent Successfully! Thank you" . $name . ", We will contact you shortly!</h1>";
-    } else {
-        echo "Something went wrong!";
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully"; 
     }
-}
-
+catch(PDOException $e)
+    {
+    echo "Connection failed: " . $e->getMessage();
+    }
 ?>
-</body>
-</html>
