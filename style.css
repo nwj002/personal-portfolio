@@ -94,9 +94,6 @@ button:hover {
 
 
 
-
-
-
 body {
   font-family: Arial, sans-serif;
   background-color: black;
@@ -145,6 +142,8 @@ nav a {
   color: #fff;
   text-decoration: none;
 }
+
+
 
 /* Main content styles */
 main {
