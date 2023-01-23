@@ -1,17 +1,18 @@
 <?php
-$servername = "website";
-$username = "root";
-$password = "2002";
-$dbname = "database_name";
+if(isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully"; 
+    $to = "shadowgloomy0@gmail.com";
+    $subject = "New Form Submission";
+    $body = "Name: $name \nEmail: $email \nMessage: $message";
+    $headers = "From: $email";
+
+    if(mail($to, $subject, $body, $headers)) {
+        echo "Form submitted successfully!";
+    } else {
+        echo "There was an error submitting the form. Please try again.";
     }
-catch(PDOException $e)
-    {
-    echo "Connection failed: " . $e->getMessage();
-    }
+}
 ?>
