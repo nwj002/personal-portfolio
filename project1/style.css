@@ -1,0 +1,28 @@
+h1{
+    font-family: "Cookie","consolas",sans-serif;
+    text-decoration: wavy;
+    border-style: outset;
+    border-width: 5px;
+    border-color: grey;
+    padding : 4px;
+    border-radius: 10;
+
+
+}
+
+
+p{
+  
+    border-style: ridge;
+}
+
+#ram{
+   
+}
+
+.lorem{
+    
+}
+.nolorem{
+   
+}
