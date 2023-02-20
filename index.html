@@ -5,33 +5,84 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jenish Budhathoki</title>
-	<link rel="icon" href="website logo.png" type="image/x-icon">
+	<link rel="shortcut icon" type="image/png" href="icons/website logo.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
 
 </head>
 <body>
-	 <!-- Add the header section with a heading and description -->
-	 <header>
-		<h1>My Website</h1>
-		<p>Welcome to my website!</p>
-	  </header>
-  
-	  <!-- Add the navigation menu with links -->
-	  <nav>
-		<a href="#">Home</a>
-		<a href="#">About us</a>
-		<a href="#">Services</a>
-		<a href="#">Contact</a>
-	  </nav>
-  
-	  <!-- Add any other sections you need here -->
-	  <section>
-		<h2>Section 1</h2>
-		<p>This is the content of section 1.</p>
+	<header>
+		<div class="container">
+			<div class="logo" >
+				<img src="icons/website logo.png" height="100" width="100">
+			</div>
+			<nav>
+			
+				<a href="#">Home</a>
+				<a href="#">About us</a>
+				<a href="#">Services</a>
+				<a href="#">Contact us</a>
+				
+			</nav>
+
+		</div>
+	</header>
+
+	<section class="about">
+		<div class="container">
+			<h2>About Me</h2>
+			<div class="row">
+				<div class="col-md-6">
+				</div>
+				<div class="col-md-6">
+					<p>Hello! I'm a student of computer science who is enthusiastic about creating stunning designs, building websites, and programming in general. I enjoy solving problems, and I'm constantly keen to learn new things about the field. </p>
+					<p>I find working with others  tremendously satisfying, and I'm eager to cooperate with those who have the same passions as me. I really think that teamwork yields the best results, and I'm dedicated to doing my part to see projects through to completion. </p>
+					<p>I appreciate you taking the time to get to know a bit about myself. I'm excited to collaborate with you!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+
+	<section class="services">
+		<div class="container">
+		  <h2>Our Services</h2>
+		  <div class="services-list">
+			<div class="service-item">
+			  <h3>UX/UIdesign</h3>
+			  <p>We create modern and responsive websites that will help your business stand out from the competition.</p>
+			</div>
+			<div class="service-item">
+			  <h3>Web Development</h3>
+			  <p>We build custom web applications and e-commerce solutions that will meet your specific business needs.</p>
+			</div>
+			<div class="service-item">
+			  <h3>Mobile App Development</h3>
+			  <p>We optimize your website to improve your online visibility and attract more traffic and customers to your site.</p>
+			</div>
+		  </div>
+		</div>
 	  </section>
-  
-	  <section>
-		<h2>Section 2</h2>
-		<p>This is the content of section 2.</p>
-	  </section>
+
+	<section class="contact">
+		<h2>Contact Me</h2>
+		<form>
+		  <label for="name">Name:</label>
+		  <input type="text" id="name" name="name" required>
+	  
+		  <label for="email">Email:</label>
+		  <input type="email" id="email" name="email" required>
+	  
+		  <label for="message">Message:</label>
+		  <textarea id="message" name="message" required></textarea>
+	  
+		  <button type="submit">Send Message</button>
+		</form>
+	  </section><br>
+
+	  
 </body>
 </html>
