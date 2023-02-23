@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
 *{
     margin:0;
@@ -228,3 +229,235 @@ body{
     color: #f7f7f7;
     width: 105%;
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    max-width: 100%;
+    margin:0 auto;
+}
+  
+.navBar{
+    width: 98%;
+    padding: 1%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(59, 4, 4);
+    cursor: pointer;
+}
+.logo{
+    width: 20%;
+    display:flex;
+    justify-content: left;
+    align-items: left;
+
+}
+
+.logo img{
+    width: 20%;
+    border: 3px solid rgb(167, 167, 167);
+    border-radius: 50px;
+}
+.nav-list{
+    font-family: 'Changa', sans-serif;
+    text-align: center;
+    list-style-type: style none;
+    display: flex;
+    align-items: center;
+
+    
+}
+.nav-list li{ 
+    display: flex;
+    padding: 26px 35px;
+
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-list a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+.background{
+    background: rgba(0,0,0,0.7) url('../images/Devil.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+
+ } 
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Changa', sans-serif;
+    color: white;
+    max-width: 70%;
+    height: 75%;
+    margin: auto;
+}
+
+.firstHalf{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+}
+
+.secondHalf img{
+    width: 30%;
+    border: 4px solid rgb(185, 189, 173);
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.firstSection {
+    width: 100%;
+    height: 100vh;
+}
+
+.big-text{
+    font-size: 40px;
+
+}
+
+.small-text{
+
+    font-size: 15px;
+}
+
+.Section{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    font-family: 'Changa', sans-serif;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+}
+
+.Section-left{
+    flex-direction: row-reverse;
+}
+
+
+.thumbnail img{
+    width: 80%;
+    padding: 0 10px;
+    margin:auto;
+}
+
+
+.paras{
+    padding: 0px 65px;
+}
+
+/* Style for About Me section */
+.about-me-div {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: justify;
+    margin: auto;
+    font-family: 'Changa', sans-serif;
+  }
+  
+  .head-part {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .body-part {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+    text-align: justify;
+  }
+  
+.Contact{
+    width: 100%;
+    background: rgba(0,0,0,0.7) url('../images/Devil2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+}
+
+.Contact h2{
+    font-family: 'Changa', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+}
+.form{
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+.form input{
+    font-family: 'Changa', sans-serif;
+    margin-bottom: 35px;
+    padding: 5px 3px;
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 6px;
+    text-align: center;
+}
+.concerns {
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    margin: 14px 0;
+    padding: 5px 3px;
+    border: 2px solidgrey;
+    border-radius: 6px;
+    font-family: 'Changa', sans-serif;
+    outline: none;
+    text-align: center;
+  }
+  
+  .concerns:focus {
+    border-color: #666;
+  }
+  
+
+.btn{
+    padding: 5px 10px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    font-family: 'Changa', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.text-footer{
+    text-align: center;
+    height: 10px;
+    padding:30px;
+    padding-top: 30px;
+    font-family:'Changa', sans-serif ;
+    display: flex;
+    justify-content: center;
+    color: #f7f7f7;
+    width: 105%;
+}
+>>>>>>> origin/master
