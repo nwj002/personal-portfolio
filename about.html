@@ -1,59 +1,86 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Nawaraj Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-    <title>nwj002</title>
-    <link rel="icon" type="image/x-icon" href="logo.png">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <button style="background-color: black; color: aliceblue; font-size:30px;" onclick="location.href='index.html'">NAWARAJ SHRESTHA</button>
-    </header>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: white;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
     <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+        <a href="index.html" class="left">Nawaraj Shrestha</a>
+        <div class="right">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <!-- <img src="pfp.jpg" alt="Nawaraj Shrestha">-->
-        <p>This is Nawaraj Shrestha and I am a computing student with a passion for problem-solving and learning. I am particularly interested in UX/UI design and web development and am always looking for new opportunities to develop my skills and gain experience in these areas. I am excited to be a part of the technology industry and look forward to contributing to the development of innovative and user-friendly products in the future. I am eager to learn more in this field and make a meaningful impact.</p>
-        <h3>Education</h3>
-        <ul>
-          <li>BSc(Hons) Computing - Coventry University </li>
-        </ul>
-        <h3>Skills</h3>
-        <ul>
-          <li>Web development (HTML, CSS, etc.)</li>
-          <li>User Interface Design</li>
-          <li>Python</li>
-          <li>MYSQL</li>
-          <li>JAVA</li>
-        </ul>
-      </section>
-    </main>
-        
-    <footer>
 
-      <a href="https://twitter.com/sudarshan_02">
-        <img src="twitter.svg" alt="Twitter" width="25" height="25">
-      </a>
+    <section id="about">
+        <h1>About Me</h1>
+        <p>I am a passionate individual with expertise in various fields.</p>
+    </section>
 
-      <a href="https://www.linkedin.com/in/nwj002/">
-        <img src="in.svg" alt="GitHub" width="35" height="35">
-      </a>
-      <a href="https://github.com/nwj002">
-        <img src="github.svg" alt="GitHub" width="30" height="30">
-      </a>
-      <!-- <p>Copyright © Nawaraj Shrestha 2021</p> -->
-    </footer>
-  </body>
+    <script>
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        // Add click event listener to each navigation link
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                window.location.href = link.getAttribute('href');
+            });
+        });
+    </script>
+</body>
+
 </html>

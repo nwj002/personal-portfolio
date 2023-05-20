@@ -1,48 +1,95 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <title>nwj002</title>
-    <link rel="icon" type="image/x-icon" href="logo.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="effect.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-  </head>
-  <body>
-    <div id="left-section">
-      <section id="home">
-        <h1>
-          <a href="" class="typewrite" data-period="2000" data-type='[ "WELCOME EVERYONE" ]'>
-            <span class="wrap"></span>
-          </a>
-        </h1>
-      </section>
-   </div>
-   
-   
-  
-    <div id="right-section">
-        <h1>NAWARAJ SHRESTHA</h1>
-        <h2 class="learner">KAIZEN</h2>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
 
-        <button onclick="location.href='home.html'">Home</button>
-        <div id="social-icons">
-          <a href="https://twitter.com/sudarshan_02">
-            <img src="twitter.svg" alt="Twitter" width="25" height="25">
-          </a>
+        .firstsec {
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            height: 100vh;
+        }
 
-          <a href="https://www.linkedin.com/in/nwj002/">
-            <img src="in.svg" alt="LinkedIn" width="35" height="35">
-          </a>
+        .left {
+            background-color: black;
+            width: 50%;
+        }
 
-          <a href="https://github.com/nwj002">
-            <img src="github.svg" alt="GitHub" width="30" height="30">
-          </a>
-        </div>
-      </div>
-      
-  </body>
+        .right {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 50%;
+            border: 1px solid black;
+        }
+
+        .right h1 {
+            color: #000;
+            margin-bottom: 20px;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .right h2 {
+            font-size: 1rem;
+            color: black;
+        }
+
+        .right button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: white;
+            border: 1px solid white;
+            font-size: 16px;
+            cursor: pointer;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .right button:hover {
+            background-color: black;
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="firstsec">
+            <div class="left"></div>
+            <div class="right">
+                <h1>Nawaraj Shrestha</h1>
+                <h2>Student / Learner</h2>
+                <button onclick="window.location.href = 'home.html';">Home</button>
+            </div>
+        </section>
+    </main>
+
+</body>
+
 </html>
