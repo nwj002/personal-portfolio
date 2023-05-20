@@ -1,44 +1,84 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawaraj Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-    <title>nwj002</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="effect.js"></script>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+        }
 
-    <link rel="icon" type="image/x-icon" href="logo.png">
-  </head>
-  <body>
-    <header>
-      <button style="background-color: black; color: aliceblue; font-size:30px;" onclick="location.href='index.html'">NAWARAJ SHRESTHA</button>
-    </header>
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: white;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            font-size: 1.5rem;
+            color: black;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li:hover {
+            color: #555555;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .left:hover:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: #555555;
+        }
+    </style>
+</head>
+
+<body>
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+        <a href="index.html" class="left">Nawaraj Shrestha</a>
+        <div class="right">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+        </div>
     </nav>
-    <main>
-     
-      <p>   HOME PAGE WILL BE UPDATED SOON </p>
+</body>
 
-    </main>
-    <footer>
-      <a href="https://twitter.com/sudarshan_02">
-        <img src="twitter.svg" alt="Twitter" width="25" height="25">
-      </a>
-      <a href="https://www.linkedin.com/in/nwj002/">
-        <img src="in.svg" alt="GitHub" width="35" height="35">
-      </a>
-        <a href="https://github.com/nwj002">
-            <img src="github.svg" alt="GitHub" width="30" height="30">
-          </a>
-      <!-- <p>Copyright © Nawaraj Shrestha 2021</p> -->
-    </footer>
-  </body>
 </html>
