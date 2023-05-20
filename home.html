@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nawaraj Portfolio</title>
+    <title>Home - Nawaraj Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -19,14 +19,20 @@
             background-color: white;
             color: black;
             font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
         }
 
         nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 90px;
             background-color: white;
+            z-index: 999;
         }
 
         nav ul {
@@ -38,30 +44,44 @@
             list-style: none;
             margin: 0 23px;
             font-size: 1.5rem;
-            color: black;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555555;
             transition: color 0.3s ease;
         }
 
-        nav ul li:hover {
-            color: #555555;
+        nav ul li a:hover {
+            color: black;
+            font-weight: bold;
         }
 
         .left {
             font-size: 1.5rem;
             cursor: pointer;
-            color: black;
+            color: #555555;
             text-decoration: none;
-            position: relative;
+            transition: color 0.3s ease;
         }
 
-        .left:hover:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 100%;
-            height: 2px;
-            background-color: #555555;
+        .left:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: start;
+        }
+
+        .section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -71,14 +91,53 @@
         <a href="index.html" class="left">Nawaraj Shrestha</a>
         <div class="right">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <section id="home" class="section">
+        <h1>Welcome to My Portfolio</h1>
+    </section>
+
+    <section id="about" class="section">
+        <h1>About Me</h1>
+        <p>I am Nawaraj Shrestha, a passionate learner and aspiring web developer.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h1>Services</h1>
+        <p>I offer various web development services to help businesses establish their online presence.</p>
+    </section>
+
+    <section id="projects" class="section">
+        <h1>Projects</h1>
+        <p>Here are some of the projects I have worked on.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h1>Contact Me</h1>
+        <p>If you have any inquiries or want to collaborate, feel free to get in touch.</p>
+    </section>
+
+    <script>
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        // Add click event listener to each navigation link
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
