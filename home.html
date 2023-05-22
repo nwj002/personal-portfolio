@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home - Nawaraj Portfolio</title>
+    <title>Nawaraj Shrestha</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -84,6 +84,28 @@
             font-weight: bold;
             margin-bottom: 20px;
         }
+        form label {
+  display: block;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+  border: 1px solid #ccc;
+  color: black;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+}
+
+        
     </style>
 </head>
 
@@ -101,10 +123,10 @@
         </div>
     </nav>
 
-    <section id="home" class="section" >
+    <section id="home" class="section">
         <!-- style="background-image: url('https://images.pexels.com/photos/305821/pexels-photo-305821.jpeg?auto=compress&cs=tinysrgb&w=600');" -->
-        <div> 
-            
+        <div>
+
             <h1>Welcome to my Portfolio</h1>
         </div>
     </section>
@@ -133,8 +155,49 @@
     </section>
 
     <section id="services" class="section">
-        <h1>Services</h1>
-        <p>I offer various web development services to help businesses establish their online presence.</p>
+        <div>
+            <h1>Services</h1>
+            <section class="Section">
+                <div class="paras">
+                    <p class="sectionTag big-text ">Web development</p>
+                    <p class="subSectionTag small-text">
+                        I have extensive expertise in creating visually appealing and user-friendly websites. I possess
+                        proficiency in HTML, CSS, and JavaScript for developing responsive and interactive designs. I
+                        also have experience in creating websites that are optimized for search engines and are
+                        fast-loading. Additionally, I have the ability to create custom designs that align with the
+                        client's brand and meet their business objectives. I possess knowledge of design principles,
+                        color theory, and typography for creating designs that are visually appealing and easy to read.
+                    </p>
+                </div>
+            </section>
+
+            <section class="Section Section-left">
+                <div class="paras">
+                    <p class="sectionTag big-text">UX/UI design</p>
+                    <p class="subSectionTag small-text">I have a lot of expertise developing user-centric designs that
+                        are driven by the wants and behaviors of users. I am skilled at conducting user research,
+                        usability tests, and user surveys to determine the needs and preferences of users. I am quite
+                        knowledgeable in design programs and technologies like Sketch, Figma, Adobe XD, and InVision. In
+                        order to conceptualize and test designs, I can also make wireframes, prototypes, and user flows.
+                        I'm skilled in designing user interfaces that are simple to understand and aesthetically
+                        pleasing.</p>
+                </div>
+            </section>
+
+
+            <section class="Section">
+                <div class="paras">
+                    <p class="sectionTag big-text">App Development</p>
+                    <p class="subSectionTag small-text">I have a great deal of experience creating mobile apps for the
+                        iOS and Android operating systems. I have experience designing user-friendly, intuitive user
+                        interfaces for mobile apps. I am well-versed in both platform-specific design ideas and best
+                        practices for mobile applications. In order to conceptualize and test designs, I can also make
+                        wireframes, prototypes, and user flows. I am skilled in using design programs and technologies
+                        including Sketch, Figma, Adobe XD, and InVision.</p>
+                </div>
+            </section>
+            <hr>
+        </div>
     </section>
 
     <section id="projects" class="section">
@@ -143,9 +206,25 @@
     </section>
 
     <section id="contact" class="section">
-        <h1>Contact Me</h1>
-        <p>If you have any inquiries or want to collaborate, feel free to get in touch.</p>
+        <main>
+            <h2>Contact Me</h2>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+            <h3>Contact Information</h3>
+            <ul>
+                <li>Email:email@gmail.com</li>
+                <li>Phone: +977 9800000000</li>
+                <li>Address: Kathmandu, Nepal</li>
+            </ul>
     </section>
+    </main>
 
     <script>
         const navLinks = document.querySelectorAll('nav ul li a');
