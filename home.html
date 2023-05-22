@@ -84,6 +84,29 @@
             font-weight: bold;
             margin-bottom: 20px;
         }
+
+        form label {
+            display: block;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            border: 1px solid #ccc;
+            color: black;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+        }
+
+        form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+        }
     </style>
 </head>
 
@@ -184,19 +207,25 @@
     </section>
 
     <section id="contact" class="section">
-        <div>
-            <h1>Contact Me</h1>
-            <p>If you have any inquiries or want to collaborate, feel free to get in touch.</p>
-            <div class="form">
-                <input type="text" name="name" id="name" placeholder="Enter your name.">
-                <input type="text" name="email" id="email" placeholder="Enter your mail.">
-                <textarea class="concerns" name="text" id="text" placeholder="Enter your concerns."></textarea>
-                <button class="btn">
-                    Subbmit
-                </button>
-            </div>
-        </div>
+        <main>
+            <h2>Contact Me</h2>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+            <h3>Contact Information</h3>
+            <ul>
+                <li>Email:email@gmail.com</li>
+                <li>Phone: +977 9800000000</li>
+                <li>Address: Kathmandu, Nepal</li>
+            </ul>
     </section>
+    </main>
 
     <script>
         const navLinks = document.querySelectorAll('nav ul li a');
