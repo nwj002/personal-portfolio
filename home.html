@@ -110,9 +110,34 @@
 
         .contact section {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 50px;
+        }
+
+        .contact section>* {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+        }
+
+        .contact section h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555555;
+        }
+
+        .contact section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .contact section li {
+            margin-bottom: 5px;
         }
     </style>
+
 </head>
 
 <body>
