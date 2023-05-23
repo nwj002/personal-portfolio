@@ -49,7 +49,7 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #555555;
+            color: #495057;
             transition: color 0.3s ease;
         }
 
@@ -89,6 +89,7 @@
             display: block;
             font-size: 1.2em;
             margin: 10px 0;
+            
         }
 
         form input[type="text"],
@@ -136,6 +137,28 @@
         .contact section li {
             margin-bottom: 5px;
         }
+
+        #about.section {
+            margin: 50px;
+            padding: 8px;
+
+        }
+
+        .box {
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            padding: 1rem;
+
+        }
+
+        #contact.section {
+            display: flex;
+            justify-content: space-around;
+        }
     </style>
 
 </head>
@@ -154,17 +177,16 @@
         </div>
     </nav>
 
-    <section id="home" class="section">
-        <!-- style="background-image: url('https://images.pexels.com/photos/305821/pexels-photo-305821.jpeg?auto=compress&cs=tinysrgb&w=600');" -->
+    <section id="home" class="section" style="background-image: url('images/bg.jpg'); background-repeat: no-repeat;
+    background-size: cover;">
         <div>
-
-            <h1>Welcome to my Portfolio</h1>
+            <h1 style="color: white;">Welcome to my Portfolio</h1>
         </div>
     </section>
 
     <section id="about" class="section">
-        <div>
-            <h1>About Me</h1>
+        <div class="box">
+            <h1 style="text-align: center;">About Me</h1>
             <p>This is Nawaraj Shrestha and I am a computing student with a passion for problem-solving and learning. I
                 am particularly interested in UX/UI design and web development and am always looking for new
                 opportunities to develop my skills and gain experience in these areas. I am excited to be a part of the
@@ -186,8 +208,9 @@
     </section>
 
     <section id="services" class="section">
-        <div>
-            <h1>Services</h1>
+        <h1 style="text-align: center;">Services</h1>
+        <!-- <div>
+            
             <section class="Section">
                 <div class="paras">
                     <p class="sectionTag big-text ">Web development</p>
@@ -228,18 +251,18 @@
                 </div>
             </section>
             <hr>
-        </div>
+        </div> -->
     </section>
 
     <section id="projects" class="section">
-        <h1>Projects</h1>
-        <p>Here are some of the projects I have worked on.</p>
+        <h1 style="text-align: center;">Projects</h1>
+        
     </section>
 
     <section id="contact" class="section">
         <div>
-            <h1>Contact Me</h1>
-            <div class="contact section">
+            <h1 style="text-align: center;">Contact Me</h1>
+            <div>
                 <form>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required><br>
@@ -249,18 +272,16 @@
                     <textarea id="message" name="message" required></textarea><br>
                     <input type="submit" value="Submit">
                 </form>
-                <h3>Contact Information</h3>
-                <div>
-                    <ul>
-                        <li>Email:johndoe@gmail.com</li>
-                        <li>Phone: +977 9800000000</li>
-                        <li>Address: Kathmandu, Nepal</li>
-                    </ul>
-                </div>
             </div>
-        </div>
-
-
+            <!-- <h3>Contact Information</h3>
+            <div>
+                <ul>
+                    <li>Email:johndoe@gmail.com</li>
+                    <li>Phone: +977 9800000000</li>
+                    <li>Address: Kathmandu, Nepal</li>
+                </ul>
+            </div>
+        </div> -->
     </section>
 
 
