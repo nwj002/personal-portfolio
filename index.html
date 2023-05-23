@@ -68,7 +68,7 @@
             color: black;
             font-weight: bold;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: background-color 1s ease;
         }
 
         .right button:hover {
@@ -79,11 +79,13 @@
         .avatar {
             width: 100px;
             height: 100px;
-            border-radius: 0;
+            border-radius: 50%;
+            /* Set the border radius to 100% */
             margin: 0 auto 20px;
             display: block;
             background-color: transparent;
         }
+
 
         footer a:not(:last-child) {
             margin-right: 10px;
@@ -97,11 +99,7 @@
         <section class="firstsec">
             <div class="left"></div>
             <div class="right">
-                <!-- <video class="avatar"
-                    poster="https://emoji.discadia.com/emojis/ba8c48ca-ef1f-43e0-94b6-1cff91d78bc9.GIF" autoplay loop
-                    muted>
-                    <source src="https://media.tenor.com/_4v3Nx_hzjwAAAAC/peepo.gif" type="video/mp4">
-                </video> -->
+                <img class="avatar" src="images/ok.jpg" alt="Avatar">
                 <h1>Nawaraj Shrestha</h1>
                 <h2>Student / Learner</h2>
                 <button onclick="window.location.href = 'home.html';">Home</button>
