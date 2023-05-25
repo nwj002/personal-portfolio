@@ -33,6 +33,10 @@
         .left {
             background-color: black;
             width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .right {
@@ -97,29 +101,19 @@
 <body>
     <main>
         <section class="firstsec">
-            <div class="left"></div>
+            <div class="left">
+                <h1>Hi, my name is Nawaraj<br> and I am a passionate <br> <span class="typing"><span id="typing-text"></span></span></h1>
+            </div>
             <div class="right">
                 <img class="avatar" src="images/ok.jpg" alt="Avatar">
                 <h1>Nawaraj Shrestha</h1>
                 <h2>Student / Learner</h2>
                 <button onclick="window.location.href = 'home.html';">Home</button>
-                <!-- <footer>
-                    <a href="https://twitter.com/sudarshan_02">
-                        <img src="twitter.svg" alt="Twitter" width="25" height="25">
-                    </a>
-                    <a href="https://www.linkedin.com/in/nwj002/">
-                        <img src="in.svg" alt="LinkedIn" width="35" height="35">
-                    </a>
-                    <a href="https://github.com/nwj002">
-                        <img src="github.svg" alt="GitHub" width="30" height="30">
-                    </a>
-                    <p>Copyright © Nawaraj Shrestha 2021</p> -->
-                <!-- </footer> -->
             </div>
         </section>
     </main>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
