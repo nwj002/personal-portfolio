@@ -90,7 +90,7 @@
             font-size: 1.2em;
             margin: 10px 0;
             color: #f2f3f6;
-            
+
         }
 
         form input[type="text"],
@@ -104,11 +104,19 @@
         }
 
         form input[type="submit"] {
-            background-color: #333;
+            background-color: #000000;
             color: #fff;
             padding: 10px 20px;
             border: none;
+            border-radius: 8px;
+            color: rgb(249, 249, 249);
+
         }
+
+        form input[type="submit"]:hover {
+            background-color: #f2f3f6;
+        }
+
 
         .contact section {
             display: flex;
@@ -210,60 +218,47 @@
 
     <section id="services" class="section">
         <h1 style="text-align: center;">Services</h1>
-        <!-- <div>
-            
-            <section class="Section">
-                <div class="paras">
-                    <p class="sectionTag big-text ">Web development</p>
-                    <p class="subSectionTag small-text">
-                        I have extensive expertise in creating visually appealing and user-friendly websites. I possess
-                        proficiency in HTML, CSS, and JavaScript for developing responsive and interactive designs. I
-                        also have experience in creating websites that are optimized for search engines and are
-                        fast-loading. Additionally, I have the ability to create custom designs that align with the
-                        client's brand and meet their business objectives. I possess knowledge of design principles,
-                        color theory, and typography for creating designs that are visually appealing and easy to read.
-                    </p>
-                </div>
-            </section>
 
-            <section class="Section Section-left">
-                <div class="paras">
-                    <p class="sectionTag big-text">UX/UI design</p>
-                    <p class="subSectionTag small-text">I have a lot of expertise developing user-centric designs that
-                        are driven by the wants and behaviors of users. I am skilled at conducting user research,
-                        usability tests, and user surveys to determine the needs and preferences of users. I am quite
-                        knowledgeable in design programs and technologies like Sketch, Figma, Adobe XD, and InVision. In
-                        order to conceptualize and test designs, I can also make wireframes, prototypes, and user flows.
-                        I'm skilled in designing user interfaces that are simple to understand and aesthetically
-                        pleasing.</p>
-                </div>
-            </section>
-
-
-            <section class="Section">
-                <div class="paras">
-                    <p class="sectionTag big-text">App Development</p>
-                    <p class="subSectionTag small-text">I have a great deal of experience creating mobile apps for the
-                        iOS and Android operating systems. I have experience designing user-friendly, intuitive user
-                        interfaces for mobile apps. I am well-versed in both platform-specific design ideas and best
-                        practices for mobile applications. In order to conceptualize and test designs, I can also make
-                        wireframes, prototypes, and user flows. I am skilled in using design programs and technologies
-                        including Sketch, Figma, Adobe XD, and InVision.</p>
-                </div>
-            </section>
-            <hr>
-        </div> -->
     </section>
+    <style>
+        .github-button {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .github-button:hover {
+            background-color: #e1e1e1;
+        }
+    </style>
 
     <section id="projects" class="section">
         <h1 style="text-align: center;">Projects</h1>
-        
+        <div>
+            <button class="github-button" onclick="window.open('https://github.com/nwj002/JABS', '_blank')">
+                JABS
+            </button>
+
+            <button class="github-button" onclick="window.open('https://github.com/nwj002/calculator-app', '_blank')">
+                Calculator
+            </button>
+        </div>
     </section>
+
+
 
     <section id="contact" class="section" style="background-image: url('images/cn.jpg'); background-repeat: no-repeat;
     background-size: cover;">
         <div>
-            <h1 style="text-align: center; color: #f2f3f6;" >Contact Me</h1>
+            <h1 style="text-align: center; color: #f2f3f6;">Contact Me</h1>
             <div>
                 <form>
                     <label for="name">Name:</label>
