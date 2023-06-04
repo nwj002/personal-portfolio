@@ -110,7 +110,7 @@
             border: none;
             border-radius: 8px;
             color: rgb(249, 249, 249);
-            
+
         }
 
         form input[type="submit"]:hover {
@@ -220,17 +220,40 @@
         <h1 style="text-align: center;">Services</h1>
 
     </section>
+    <style>
+        .github-button {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .github-button:hover {
+            background-color: #e1e1e1;
+        }
+    </style>
 
     <section id="projects" class="section">
         <h1 style="text-align: center;">Projects</h1>
-        <button class="github-button" onclick="window.open('https://github.com/nwj002/JABS', '_blank')">
-            JABS
-        </button>
-        <button class="github-button" onclick="window.open(' https://github.com/nwj002/calculator-app, '_blank')">
-            Calculator          
-        </button>
+        <div>
+            <button class="github-button" onclick="window.open('https://github.com/nwj002/JABS', '_blank')">
+                JABS
+            </button>
+
+            <button class="github-button" onclick="window.open('https://github.com/nwj002/calculator-app', '_blank')">
+                Calculator
+            </button>
+        </div>
     </section>
-    
+
+
 
     <section id="contact" class="section" style="background-image: url('images/cn.jpg'); background-repeat: no-repeat;
     background-size: cover;">
