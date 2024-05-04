@@ -3,117 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nawaraj Shrestha</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <title>My Portfolio</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-
-        body {
-            background-color: black;
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            overflow: hidden;
-        }
-
-        .firstsec {
             display: flex;
-            justify-content: space-around;
-            margin: 0;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
+            background-color: #f5f5f5;
         }
 
-        .left {
-            background-color: black;
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .right {
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        .container {
             text-align: center;
-            width: 50%;
-            border: 1px solid black;
         }
 
-        .right h1 {
-            color: #000;
+        h1 {
+            font-size: 36px;
             margin-bottom: 20px;
-            font-size: 3rem;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .update-message {
+            color: #007bff;
             font-weight: bold;
-        }
-
-        .right h2 {
-            font-size: 1rem;
-            color: black;
-        }
-
-        .right button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: white;
-            border: 1px solid white;
-            font-size: 16px;
-            cursor: pointer;
-            color: black;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 1s ease;
-        }
-
-        .right button:hover {
-            background-color: black;
-            color: white
-        }
-
-        .avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            /* Set the border radius to 100% */
-            margin: 0 auto 20px;
-            display: block;
-            background-color: transparent;
-        }
-
-
-        footer a:not(:last-child) {
-            margin-right: 10px;
-            /* Adjust the spacing as needed */
         }
     </style>
 </head>
 
 <body>
-    <main>
-        <section class="firstsec">
-            <div class="left">
-                <h1>Hi, my name is Nawaraj<br> and I am a passionate <br> <span class="typing"><span id="typing-text"></span></span></h1>
-            </div>
-            <div class="right">
-                <img class="avatar" src="images/ok.jpg" alt="Avatar">
-                <h1>Nawaraj Shrestha</h1>
-                <h2>Student / Learner</h2>
-                <button onclick="window.location.href = 'home.html';">Home</button>
-            </div>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
+    <div class="container">
+        <h1>My Portfolio</h1>
+        <p>This website is currently being updated.</p>
+        <p class="update-message">Please check back soon for new content!</p>
+    </div>
 </body>
 
 </html>
